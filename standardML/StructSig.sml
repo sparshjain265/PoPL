@@ -1,6 +1,7 @@
 signature UNIQUE =
 sig
   type uid
+  type myType
   val allocate : unit -> uid
   val toInt		: uid -> int 
 end
@@ -8,6 +9,7 @@ end
 functor Unique (S: sig end) :> UNIQUE =
 struct
 	type uid = int
+	datatype myType = EMPTY
 	val counter = ref 0
 	fun allocate () = (counter := !counter + 1; !counter - 1)
 	(*
