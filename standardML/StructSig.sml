@@ -28,9 +28,9 @@ val a2 = A.allocate()
 val b1 = B.allocate()
 val b2 = B.allocate()
 
-(*
-A.toInt a1
-A.toInt a2
-B.toInt b1
-B.toInt b2
-*)
+
+val a1int = A.toInt a1
+val a2int = A.toInt a2
+val b1itn = B.toInt b1
+val b2int = B.toInt b2
+(*val b3int = B.toInt a1*)

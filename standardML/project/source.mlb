@@ -1,0 +1,10 @@
+$(SML_LIB)/basis/basis.mlb
+$(SML_LIB)/mlyacc-lib/mlyacc-lib.mlb
+
+printColor.sml
+ast.sml
+translate.sml
+c.grm.sig
+c.grm.sml
+c.lex.sml 
+ec.sml
